@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+
+body {
+  font-family: helvetica;
+  font-size: 1em;
+  background-color: deeppink;
+}
+
+p{
+  line-height: 1.2em;
+}
+
+#content{
+  width: 50%;
+  margin: 1px auto;
+  padding: 8%;
+  background-color: white;
+}
+
+#photo{
+  padding: 5% 0;
+}

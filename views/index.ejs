@@ -1,0 +1,18 @@
+<% include header %>
+
+  <h1 id="blogName">Fashion blog</h1>
+
+  <div id="content">
+  <% var teller = 0; %>
+  <% post.forEach(function(post) { %>
+
+      <h1 id="titleKlein"><%- post.title %></h1>
+      <p></br> <%- post.short %>
+      </p>
+      <a id="leesMeer" href="/blog/<%- teller %>"> Lees meer </a>
+    <% teller++ %>
+
+  <% }); %>
+  </div>
+
+<% include footer %>

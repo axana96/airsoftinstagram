@@ -1,0 +1,22 @@
+<% include header %>
+
+  <div id="content">
+      <section class="instagram">
+        <% afbeeldingen.forEach(function(afbeelding){ %>
+          <figure id="photo">
+            <a href="https://www.instagram.com/p/<%- afbeelding.id %>/?taken-by=rebelaxa"><img src="<%- afbeelding.media %>" alt="alt text" ></a>
+            <figcaption >
+              <!-- .replace(/^\s*#\w+\s*+$/gm, "") -->
+                <% if (afbeelding.text) { %>
+                  <%- afbeelding.text.replace(/(?:\r\n|\r|\n)/g, '<br />').replace(/#.*$/, "") %>
+                </br></br>
+                  <%- afbeelding.likes %>
+                  <%} else {%>Click to see this picture<%} %>
+
+            </figcaption>
+          </figure>
+        <% }); %>
+      </section>
+  </div>
+
+<% include footer %>
