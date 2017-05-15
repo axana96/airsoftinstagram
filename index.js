@@ -2,9 +2,6 @@
 var express = require("express");
 var path = require("path");
 
-app.set('port', (process.env.PORT || 5000));
-app.listen(app.get('port'), function() { });
-
 // Daarna een Express app maken
 var app = express();
 const instagramPosts = require('instagram-posts');
@@ -13,6 +10,8 @@ var dataFile = require('./data/data.json');
 
 // Express vertellen dat je views zich in een folder views bevinden
 app.set("views", path.resolve(__dirname, "views"));
+app.set('port', (process.env.PORT || 5000));
+app.listen(app.get('port'), function() { });
 
 // Express vertellen dat je de EJS templating gaat gebruiken
 // We moeten ejs ook installeren. Je doet dit via npm install ejs --save
