@@ -135,12 +135,12 @@ nav a:hover{
 #content{
   padding: 0 10%;
   color: white;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#photo:nth-child(even){
-  width: 40%;
-  float: left;
-  display: inline;
+#photo{
   padding: 0 3%;
   margin-right: 2%;
   margin-top: 6%;
@@ -148,20 +148,9 @@ nav a:hover{
   border-radius: 10px;
 }
 
-#photo:nth-child(odd){
-  width: 40%;
-  float: right;
-  display: inline;
-  padding: 0 3%;
-  margin-left: 2%;
-  margin-top: 6%;
-  background-color: rgba(255, 255, 255, .4);
-  border-radius: 10px;
-}
-
 #photo img{
   width: 100%;
-  padding-top: 10%;
+  padding-top: 4%;
 }
 
 figcaption{
