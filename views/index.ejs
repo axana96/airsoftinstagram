@@ -1,18 +1,54 @@
 <% include header %>
 
-  <h1 id="blogName">Fashion blog</h1>
+<% include navigatie %>
 
-  <div id="content">
-  <% var teller = 0; %>
-  <% post.forEach(function(post) { %>
-
-      <h1 id="titleKlein"><%- post.title %></h1>
-      <p></br> <%- post.short %>
-      </p>
-      <a id="leesMeer" href="/blog/<%- teller %>"> Lees meer </a>
-    <% teller++ %>
-
-  <% }); %>
+  <div id="home">
+        <h1>airsoft</h1>
   </div>
+
+  <div id="watIs">
+      <h1>Wat is airsoft?</h1>
+      <p>
+        Als we over airsoft praten is dit niet altijd gekend bij iedereen. Wel kennen ze paintball. Wel, airsoft is
+        gelijkaardig aan paintball enkel veel realistischer. Zo wordt er geen gebruik gemaakt van verf maar wel van
+        kleine plastic bolletjes van 6mm genaamt BB's.
+      </br></br>
+        Bij het spelen van airsoft zijn de uniformen gelijk aan die van het echte leger. Zo kan je mensen tegen komen
+        met een patroon dat gebruikt wordt door België, Nederland, US ...
+      </br></br>
+        Tijdens het spelen van airsoft wordt er gebruik gemaakt van replica's. Deze werken op batterijen of HPA.
+        Deze replica's hebben bijna geen enkele uiterlijke verschillen dan de echte wapens. Het zijn 1 op 1 reproducties.
+      </p>
+  </div>
+
+  <div id="over">
+  		        <div class="boxes">
+  		            <div class="box">
+  		                <h2>actie</h2>
+  		                <p>
+                          Een airsoft spel is bijna altijd intensief. Je bent constant in beweging. Je gaat opzoek naar de vijand,
+                          je voltooid missies,... Kortom, airsoft biedt veel variatie voor ieders wat wils. Zo heb je MilSim (military simulation),
+                          gewone woodland skirms (dit is het soort dat in België en Nederland gespeeld wordt), en CQB (Close Quarter Battle).
+
+  		                </p>
+  		            </div>
+
+  		            <div class="box">
+  		               <h2>avontuur</h2>
+  		               <p>
+  		                   Of je nu buiten of binnen speelt, er is altijd avontuur te beleven. Persoonlijk houdt ik er het meeste van om buiten in de
+                         natuur te spelen. Dat zorgt voor de meeste avonturen en is het meest realistisch.
+  		               </p>
+  		            </div>
+
+  		            <div class="box">
+  		                <h2>teamverband</h2>
+  		                <p>
+  		                    In de airsoft wereld is er een zeer groot teamverband. Als je alleen of met een paar vrienden naar een skirm gaat,
+                          is de kans groot dat je samen speelt met mensen die je niet kent. Dit is het tofste aan airsoft. Je kan nieuwe mensen
+                          leren kennen en samen spelen met iedereen.
+  		                </p>
+  		            </div>
+  		        </div>
 
 <% include footer %>
