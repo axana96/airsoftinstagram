@@ -23,13 +23,6 @@ app.get('/', function(req, res) {
   });
 });
 
-app.get("/blog/:postid", function(req, res) {
-  var blogpost = dataFile.blogposts[req.params.postid];
-    res.render("blog", {
-        post: blogpost
-    });
-});
-
 app.get('/instagram', function(req, res) {
   instagramPosts('rebelaxa').then(afbeeldingen => {
 console.log(afbeeldingen);
